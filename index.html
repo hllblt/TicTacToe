@@ -15,43 +15,44 @@
 
 <body>
     <div class="buttons"><button id="start">start</button><button id="end">end</button></div>
-        <table class="scoreboard">
-            <thead>
-                <tr>
-                    <th id="turnX"></th>
-                    <th id="turnO"></th>
-                </tr>
-                <tr>
-                    <th>✖</th>
-                    <th>◯</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td id="scoreX"></td>
-                    <td id="scoreO"></td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="game">
-            <tbody>
-                <tr>
-                    <td class="cells" onclick="check(this.id)" id="one">✖</td>
-                    <td class="cells" onclick="check(this.id)" id="two">◯</td>
-                    <td class="cells" onclick="check(this.id)" id="three"></td>
-                </tr>
-                <tr>
-                    <td class="cells" onclick="check(this.id)" id="four"></td>
-                    <td class="cells" onclick="check(this.id)" id="five"></td>
-                    <td class="cells" onclick="check(this.id)" id="six"></td>
-                </tr>
-                <tr>
-                    <td class="cells" onclick="check(this.id)" id="seven"></td>
-                    <td class="cells" onclick="check(this.id)" id="eight"></td>
-                    <td class="cells" onclick="check(this.id)" id="nine"></td>
-                </tr>
-            </tbody>
-        </table>
+    <table class="scoreboard">
+        <thead>
+            <tr>
+                <th id="turnX" style="color: gray;">Your Turn</th>
+                <th id="turnO"></th>
+            </tr>
+            <tr>
+                <th>✖</th>
+                <th>◯</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="scoreX">0</td>
+                <td id="scoreO">0</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="game">
+        <tbody>
+            <tr>
+                <td class="cells" onclick="asign(this.id)" id="one"></td>
+                <td class="cells" onclick="asign(this.id)" id="two"></td>
+                <td class="cells" onclick="asign(this.id)" id="three"></td>
+            </tr>
+            <tr>
+                <td class="cells" onclick="asign(this.id)" id="four"></td>
+                <td class="cells" onclick="asign(this.id)" id="five"></td>
+                <td class="cells" onclick="asign(this.id)" id="six"></td>
+            </tr>
+            <tr>
+                <td class="cells" onclick="asign(this.id)" id="seven"></td>
+                <td class="cells" onclick="asign(this.id)" id="eight"></td>
+                <td class="cells" onclick="asign(this.id)" id="nine"></td>
+            </tr>
+        </tbody>
+    </table>
+    <h1></h1>
 </body>
 
 </html>
