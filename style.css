@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid red;
+}
+
+body {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+table {
+  margin-bottom: 30px;
+  border-collapse: collapse;
+}
+
+.game {
+  border: 3px solid black;
+}
+
+.game td {
+  border: 3px solid black;
+}
+
+.game td:hover {
+  background-color: #e6dede;
+  cursor: pointer;
+}
+
+.scoreboard {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.scoreboard th,
+.scoreboard td {
+  width: 100px;
+  height: 30px;
+}
+
+.cells {
+  font-size: 100px;
+  text-align: center;
+}
+
+.cells {
+  width: 140px;
+  height: 140px;
+}
+
+#start {
+  margin-right: 30px;
+}
+/*# sourceMappingURL=style.css.map */

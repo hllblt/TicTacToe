@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="buttons"><button id="start">start</button><button id="end">end</button></div>
+        <table class="scoreboard">
+            <thead>
+                <tr>
+                    <th id="turnX"></th>
+                    <th id="turnO"></th>
+                </tr>
+                <tr>
+                    <th>✖</th>
+                    <th>◯</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="scoreX"></td>
+                    <td id="scoreO"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="game">
+            <tbody>
+                <tr>
+                    <td class="cells" onclick="check(this.id)" id="one">✖</td>
+                    <td class="cells" onclick="check(this.id)" id="two">◯</td>
+                    <td class="cells" onclick="check(this.id)" id="three"></td>
+                </tr>
+                <tr>
+                    <td class="cells" onclick="check(this.id)" id="four"></td>
+                    <td class="cells" onclick="check(this.id)" id="five"></td>
+                    <td class="cells" onclick="check(this.id)" id="six"></td>
+                </tr>
+                <tr>
+                    <td class="cells" onclick="check(this.id)" id="seven"></td>
+                    <td class="cells" onclick="check(this.id)" id="eight"></td>
+                    <td class="cells" onclick="check(this.id)" id="nine"></td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+
+</html>

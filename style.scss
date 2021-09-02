@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+body {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+table {
+  margin-bottom: 30px;
+  // width: ;
+  border-collapse: collapse;
+}
+.game {
+  border: 3px solid black;
+  td {
+    border: 3px solid black;
+  }
+  td:hover{
+    background-color: rgb(230, 222, 222);
+    cursor: pointer;
+}
+}
+.scoreboard {
+  //   border: 3px solid black;
+  text-align: center;
+  margin-top: 10px;
+  th,
+  td {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+.cells {
+  font-size: 100px;
+  text-align: center;
+}
+.cells {
+  width: 140px;
+  height: 140px;
+  //   background-color: red;
+}
+#start{
+    margin-right: 30px;
+}
