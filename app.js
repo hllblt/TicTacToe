@@ -39,15 +39,19 @@ const check = () => {
 
 };
 
-const asign = (id) => {
+const assign = (id) => {
   cell = document.getElementById(id);
   if (gameSituation == "moving") {
     if (turn == "✖" && cell.innerHTML == "") {
       cell.innerHTML = "✖";
       turn = "◯";
+      document.getElementById("turnO").innerHTML = "Your Turn"
+      document.getElementById("turnX").innerHTML = ""
     } else if (turn == "◯" && cell.innerHTML == "") {
       cell.innerHTML = "◯";
       turn = "✖";
+      document.getElementById("turnX").innerHTML = "Your Turn"
+      document.getElementById("turnO").innerHTML = ""
     }
   }
   check();
